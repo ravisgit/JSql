@@ -4,11 +4,12 @@
             /**
             *
             */
-            function Jsql() {
-                this.parse = function (query) {
-                    return query;
-                };
+            function Jsql(query) {
+                this.query = query;
             }
+            Jsql.prototype.parse = function (query) {
+                return query;
+            };
             return Jsql;
         })();
         Plugin.Jsql = Jsql;

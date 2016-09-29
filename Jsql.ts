@@ -7,13 +7,15 @@ export class Jsql{
 /**
  *
  */
-constructor() {
+constructor(public query:string) {
+
 
 
 }
 
-parse = (query:string)=>{
+parse(query:string){
     return query;
+
 }
 
 
