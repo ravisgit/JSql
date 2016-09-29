@@ -6,7 +6,21 @@
             */
             function Jsql(query) {
                 this.query = query;
+                this.init = function () {
+                };
             }
+            Jsql.isNullOrUndefined = function (query) {
+                return !query || query.length === 0;
+            };
+
+            Jsql.cleanQuery = function (query) {
+                if (Jsql.isNullOrUndefined(query))
+                    throw new Error('Invalid string passed');
+
+                return query.replace(/\s+/gi, ' ').replace(/,\s/gi,',');
+
+            };
+
             Jsql.prototype.parse = function (query) {
                 return query;
             };
