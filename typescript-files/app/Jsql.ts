@@ -1,7 +1,7 @@
-export module Ravi.Plugin{
+
+export module JS.Plugins{
 
 export class Jsql{
-
 
 static isNullOrUndefined(query:string):boolean{
 
@@ -18,11 +18,7 @@ static cleanQuery(query:string):string{
 
 }
 
-/**
- *
- */
 constructor(public query:string) {
-
 }
 
 init = ()=>{
@@ -31,7 +27,6 @@ init = ()=>{
 
 parse(query:string){
     return query;
-
 }
 
 

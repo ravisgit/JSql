@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "es5", 
+        "sourceMap": true,
+        "module": "none",
+        "outDir":"js-files"
+    }    
+}
